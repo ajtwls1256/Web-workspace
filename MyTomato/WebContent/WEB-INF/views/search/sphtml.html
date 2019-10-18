@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    
+    <style>
+        html{
+            padding: 0px;
+        }
+        
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .d-section{
+            width: 100%;
+            height: 100%;
+            background-color: whitesmoke;
+        }
+        
+        .d-section {
+            font-family: "Noto Sans KR";
+        }
+        
+        .d-container{
+            margin: 0 auto;
+            width: 1000px;
+            background-color : whitesmoke;
+        }
+        
+        
+        .d-region{
+            width: 100%;
+            height: 70px;
+            margin-bottom: 20px;
+        }
+        
+        .d-region>div{
+            float: left;
+            box-sizing: border-box;
+            width: 495px;
+            height: 100%;
+            text-align: center;
+            background-color : white;
+            
+  
+            font-size:15px;
+	        font-weight:bold;
+            line-height: 90px;
+        }
+        
+        .d-region>div:first-child{
+            margin-right: 10px;
+        }
+        
+        
+        .d-content{
+            width: 100%;
+            height: 800px;
+            background-color : whitesmoke;
+        }
+        
+        .d-category{
+            width: 100%;
+            background-color : white;
+            font-size: 13px;
+        }
+        
+        .d-searchingCategory{
+            width: 100%;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .d-searchingCategory>p:nth-of-type(1){
+            font-weight: bold;
+            font-size:14px;
+            margin-bottom: 20px;
+        }
+        
+        .d-searchingCategory>p:nth-of-type(2)>span{
+            border: 2px solid lightgray;
+            margin-right: 10px;
+            border-radius: 15px;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .d-categoryTableDiv{
+            margin-top: 30px;
+        }
+        
+        .d-categoryTableDiv>table{
+            width: 100%;
+            border-collapse: collapse;
+            border-right: none;
+        }
+        
+        .d-categoryTableDiv td{
+            width: 20%;
+            height: 35px;
+            border-top: 1px solid lightgray; 
+            border-right: 1px solid lightgray; 
+            padding-left: 20px;
+        }
+        
+        .d-categoryTableDiv td>span{
+            padding-left: 7px;
+            color: lightslategrey;
+        }
+          
+        .d-categoryTableDiv td:nth-of-type(5n){
+            border-right: none;
+        }
+        
+       
+        .d-selectingCategory{
+            padding-top: 30px;
+
+        }
+        
+        .d-selectingCategory img{
+            
+        }
+        
+        
+        
+        
+        .d-on{
+            display: block;
+        }
+        
+        .d-off{
+            display: none;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <section class="d-section">
+        <div class="d-container">
+            <div class="d-region">
+                <div>
+                    전체 지역 보기
+                </div>
+                <div>
+                    내 관심지역 보기
+                </div>
+            </div>
+            <div class="d-content">
+                <div class="d-category">
+                    <!-- 카테고리검색, 검색창 검색에 따라 다른 카테고리 -->
+                    <div class="d-searchingCategory">
+                        <p>카테고리</p>
+                        <p>
+                            <!-- 포함된 카테고리가 많은 순으로 최대 4개 -->
+                            <span>
+                                디지털/가전 > 데스크탑/본체 <span>3백+</span>
+                            </span>
+                            <span>
+                                남성의류 > 맨투맨 티셔츠 <span>2백+</span>
+                            </span>
+                            <span>
+                                도서/티켓/취미/애완 > 학습/사전/참고서 <span>1백+</span>
+                            </span>
+                            <span>
+                                디지털/가전 > 노트북/넷북 <span>50+</span>
+                            </span>
+                        </p>
+                    </div>    
+                        
+                    <div class="d-selectingCategory">
+                        
+                        <img src="/WebContent/img/d-categoryHome.png" height="16px">
+                        <span>
+                            홈
+                        </span>
+                        <span>
+                            >
+                        </span>
+                        <span>
+                            <select>
+                                메인카테고리
+                            </select>
+                        </span>
+                        <span>
+                            >
+                        </span>
+                        <span>
+                            <select>
+                                서브카테고리
+                            </select>
+                        </span>
+                        
+                    </div>
+                    <div  class="d-categoryTableDiv">
+                    <!-- 검색어가 포함된 메인카테고리,  많은순으로 -->
+                        <table>
+                            <tr>
+                                <td>
+                                    디지털가전 <span>1만+</span>
+                                </td>
+                                <td>
+                                    남성의류 <span>1만+</span>
+                                </td>
+                                <td>
+                                    패션잡화 <span>1만+</span>
+                                </td>
+                                <td>
+                                    여성의류 <span>1만+</span>
+                                </td>
+                                <td>
+                                    도서/티켓/취미/애완 <span>1만+</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    디지털가전 <span>1만+</span>
+                                </td>
+                                <td>
+                                    남성의류 <span>1만+</span>
+                                </td>
+                                <td>
+                                    패션잡화 <span>1만+</span>
+                                </td>
+                                <td>
+                                    여성의류 <span>1만+</span>
+                                </td>
+                                <td>
+                                    도서/티켓/취미/애완 <span>1만+</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    디지털가전 <span>1만+</span>
+                                </td>
+                                <td>
+                                    남성의류 <span>1만+</span>
+                                </td>
+                                <td>
+                                    패션잡화 <span>1만+</span>
+                                </td>
+                                <td>
+                                    여성의류 <span>1만+</span>
+                                </td>
+                                <td>
+                                    도서/티켓/취미/애완 <span>1만+</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="d-result">
+                    <div calss="d-result-head">
+                        <span class="d-result-head-text">
+                            
+                        </span>
+                        <span class="d-result-head-order">
+                            
+                        </span>
+                    </div>
+                    <div class="d-result-body">
+                        
+                    </div>
+                    <div class="d-result-footer">
+                        <!-- 페이지 네비 -->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        $(function(){
+            
+           
+            
+            
+             $(".d-region>div").click(function(){
+                 var index = $(".d-region>div").index(this);
+                 
+                 $(".d-searchingCategory").addClass("d-off");
+                 $(".d-selectingCategory").addClass("d-off");
+                 
+                 if(index == 0){
+                     $(".d-searchingCategory").removeClass("d-off");
+                     $(".d-searchingCategory").addClass("d-on");
+                     $(".d-categoryTableDiv tr").first().children().css("border-top","1px solid lightgray");
+                 }else{
+                     $(".d-selectingCategory").removeClass("d-off");
+                     $(".d-selectingCategory").addClass("d-on");
+                     $(".d-categoryTableDiv tr").first().children().css("border-top","none");
+                 }
+             });
+            
+            $(".d-region>div").first().click();
+        });
+        
+       
+    </script>
+</body>
+</html>

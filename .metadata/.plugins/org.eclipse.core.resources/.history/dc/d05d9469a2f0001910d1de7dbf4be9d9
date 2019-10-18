@@ -1,0 +1,25 @@
+package kr.co.tomato.vo;
+
+import java.sql.Date;
+
+public class Item
+{
+    private int itemNo;
+    private int memberNo;
+    private int itemName;
+    private String itemMainCategory;
+    private String itemSubCategoty;
+    private int itemPrice;
+    private Date itemEnrollDate;
+    private String itemState;
+    private int readcount;
+    private String itemContent;
+    private int itemAmount;
+    private int itemDeleveryNy;
+    private String itemDealRegion;
+    private String itemThumFilename;
+    private String itemThumFilepath;
+    private String itemDealState;
+    
+    
+}

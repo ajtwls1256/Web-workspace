@@ -1,0 +1,6 @@
+package test.model.vo;
+
+public class Member
+{
+    
+}

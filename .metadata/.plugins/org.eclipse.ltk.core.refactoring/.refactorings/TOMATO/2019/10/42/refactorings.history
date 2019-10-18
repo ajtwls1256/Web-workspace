@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TOMATO/src/kr/co/tomato/inquiry/controller/is.java&apos; to &apos;ictest.java&apos;" description="Rename resource &apos;is.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/kr/co/tomato/inquiry/controller/is.java" name="ictest.java" stamp="1571218025245" updateReferences="true"/>
+</session>

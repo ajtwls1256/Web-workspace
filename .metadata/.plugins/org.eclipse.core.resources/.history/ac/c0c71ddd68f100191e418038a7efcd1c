@@ -1,0 +1,35 @@
+package kr.co.tomato.search.model.service;
+
+import java.sql.Connection;
+import java.util.ArrayList;
+
+import kr.co.tomato.common.JDBCTemplate;
+import kr.co.tomato.search.model.dao.testDao;
+
+
+public class testService
+{
+    
+    public String[] allTest() {
+        Connection conn = JDBCTemplate.getConnection();
+        testDao dao = new testDao();
+        
+        String [] list = dao.allTest(conn);
+        ArrayList<NoticeComment> list = dao.selectNoticeCommentList(conn, noticeNo);
+        
+        if(n != null) {
+            int result = dao.readCount(conn, noticeNo);
+            
+            if(result > 0) {
+                JDBCTemplate.commit(conn);
+            }else {
+                JDBCTemplate.rollback(conn);
+            }
+            
+        }
+        
+        JDBCTemplate.close(conn);
+        NoticeViewData nvd = new NoticeViewData(n,list);
+        return nvd;
+    }
+}

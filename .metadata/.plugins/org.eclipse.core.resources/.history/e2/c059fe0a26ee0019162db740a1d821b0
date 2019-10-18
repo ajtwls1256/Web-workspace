@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>EL테스트 페이지</h1>
+	<a href="/jsp/ELServletTest1">1. EL Test1 (VO)</a>
+	<a href="/jsp/ELServletTest2">2. EL Test1 (Map)</a>
+</body>
+</html>

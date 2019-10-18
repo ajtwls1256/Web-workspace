@@ -1,0 +1,38 @@
+package kr.co.tomato.search.model.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import org.kh.common.JDBCTemplate;
+
+public class testDao
+{
+
+    public String[] allTest(Connection conn)
+    {
+        PreparedStatement pstmt = null;
+        int result = 0;
+        String sql = "select t_test_name from t_test";
+        
+        try
+        {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, noticeNo);
+            
+            result = pstmt.executeUpdate();
+            
+        }
+        catch (SQLException e)
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }finally {
+            JDBCTemplate.close(pstmt);
+        }
+        
+        return result;
+          
+    }
+    
+}

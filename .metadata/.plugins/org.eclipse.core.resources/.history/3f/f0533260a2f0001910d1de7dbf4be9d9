@@ -1,0 +1,6 @@
+package kr.co.tomato.vo;
+
+public class Item
+{
+    
+}
