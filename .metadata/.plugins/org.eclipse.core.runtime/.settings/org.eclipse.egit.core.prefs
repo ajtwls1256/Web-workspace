@@ -1,3 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\tomato\\TOMATO\\.git;
-GitRepositoriesView.GitDirectories.relative=C\:\\tomato\\TOMATO\\.git;
+GitRepositoriesView.GitDirectories=C\:\\tomato\\TOMATO\\.git;C\:\\Users\\user1\\Web-workspace\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\tomato\\TOMATO\\.git;.git;
+core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

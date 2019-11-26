@@ -32,11 +32,11 @@
 				<input type="text" id="searchBox" placeholder="지역, 상품, 업체 등을 검색하세요" >
 				<!-- <div id="searchIcon"></div> --> 
 				<div class="my-menu">
-					<span><a href="#"><img src="/img/money.png" id="money">판매하기</a></span>
-					<span><a href="#"><img src="/img/myMarket.png" id="myMarket">내 상점</a></span>
+					<span><a href="/testServer"><img src="/img/money.png" id="money">판매하기</a></span>
+					<span><a href="/searchPage"><img src="/img/myMarket.png" id="myMarket">내 상점</a></span>
 					
 					<!-- 일단 요기를 통해 검색페이지 이동 -->
-					<span><a href="/searchPage"><img src="/img/talk.png" id="talk">토마톡</a></span>
+					<span><a href="/views/clientSocket.jsp"><img src="/img/talk.png" id="talk">토마톡</a></span>
 				</div>
 			</div>
 		</div>

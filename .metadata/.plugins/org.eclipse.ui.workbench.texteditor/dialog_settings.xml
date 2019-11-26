@@ -2,19 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="$" key="selection"/>
+		<item value="Buy" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="$"/>
-			<item value="["/>
-			<item value="drop"/>
-			<item value="삭제"/>
-			<item value="등록"/>
-			<item value="status"/>
-			<item value="d d d"/>
+			<item value="buy"/>
+			<item value="토마톡"/>
+			<item value="연락처"/>
+			<item value="상품 태그"/>
+			<item value="생활"/>
+			<item value="바로가기"/>
+			<item value="d-region"/>
+			<item value="d-result-body"/>
 		</list>
 		<list key="replacehistory">
 		</list>
